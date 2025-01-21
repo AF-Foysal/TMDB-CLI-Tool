@@ -20,9 +20,3 @@ You can look at the API documentation to understand how to fetch the data for ea
 - [Popular Movies](https://developer.[application.properties](src/main/resources/application.properties)themoviedb.org/reference/movie-popular-list)
 - [Top Rated Movies](https://developer.themoviedb.org/reference/movie-top-rated-list)
 - [Upcoming Movies](https://developer.themoviedb.org/reference/movie-upcoming-list)
-
-There are some considerations to keep in mind:
-
-- Handle errors gracefully, such as API failures or network issues.
-- Use a programming language of your choice to build this project.
-- Make sure to include a README file with inst
