@@ -3,20 +3,51 @@ Use TMDB API to fetch movie information and display it in the terminal.
 
 In this project, you will build a simple command line interface (CLI) to fetch data from The Movie Database (TMDB) and display it in the terminal. This project will help you practice your programming skills, including working with APIs, handling JSON data, and building a simple CLI application.
 
-## Requirements
-The application should run from the command line, and be able to pull and show the popular, top-rated, upcoming and now playing movies from the TMDB API. The user should be able to specify the type of movies they want to see by passing a command line argument to the CLI tool.
+## How To Use CLI Tool
 
-Here is how the CLI tool usage should look like:
+### 1. Register for an API Key from TMDB (link provided below). Copy and paste your **API READ ACCESS TOKEN** into text file and save it for subsequent steps.
 
-``` bash
+[Getting Started](https://developer.themoviedb.org/docs/getting-started)
+
+![img.png](images/api_page.png)
+
+*Note: Do NOT share your **API KEY** nor your **API READ ACCESS TOKEN** with any unauthorized users.*
+
+### 2. Open your terminal application and clone the repository.
+
+```
+git clone https://github.com/AF-Foysal/TMDB-CLI-Tool.git
+```
+
+### 3. While on the terminal, change directory into the cloned repository. 
+
+```
+cd TMDB-CLI-TOOL
+```
+
+### 4. Run the following command and paste your **API READ ACCESS TOKEN**
+```
+./mvnw spring-boot:run -Dspring-boot.run.jvmArguments="-Dtmdb.api.token={PASTE HERE}"
+```
+*Note: The braces are not included within the statement. They are solely there to show the user where to paste the necessary information into the command.*
+
+### 5. Once the application is built, you will be met with the CLI. 
+
+```
+shell:>
+```
+
+### From here, you can utilize the following commands to access data from TMDB.
+
+```
 tmdb-app --type "playing"
 tmdb-app --type "popular"
 tmdb-app --type "top"
 tmdb-app --type "upcoming"
 ```
-You can look at the API documentation to understand how to fetch the data for each type of movie.
 
-- [Now Playing Movies](https://developer.themoviedb.org/reference/movie-now-playing-list)
-- [Popular Movies](https://developer.[application.properties](src/main/resources/application.properties)themoviedb.org/reference/movie-popular-list)
-- [Top Rated Movies](https://developer.themoviedb.org/reference/movie-top-rated-list)
-- [Upcoming Movies](https://developer.themoviedb.org/reference/movie-upcoming-list)
+## Tech Stack
+- Java 
+- Spring Boot
+- Spring Shell
+- Spring Reactive Web Client
