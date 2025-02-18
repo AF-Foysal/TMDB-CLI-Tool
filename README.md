@@ -1,4 +1,4 @@
-# [TMDB CLI Tool]https://roadmap.sh/projects/tmdb-cli
+# [TMDB CLI Tool](https://roadmap.sh/projects/tmdb-cli)
 Use TMDB API to fetch movie information and display it in the terminal.
 
 In this project, you will build a simple command line interface (CLI) to fetch data from The Movie Database (TMDB) and display it in the terminal. This project will help you practice your programming skills, including working with APIs, handling JSON data, and building a simple CLI application.
