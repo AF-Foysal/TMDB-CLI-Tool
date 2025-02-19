@@ -1,14 +1,17 @@
 package dev.affoysal.tmdb_cli_tool;
 
 import dev.affoysal.tmdb_cli_tool.Client.TMDBClient;
+import dev.affoysal.tmdb_cli_tool.Commands.TMDBCommands;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.shell.command.annotation.EnableCommand;
 import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.reactive.function.client.support.WebClientAdapter;
 import org.springframework.web.service.invoker.HttpServiceProxyFactory;
 
+@EnableCommand(TMDBCommands.class)
 @SpringBootApplication
 public class Application {
 
